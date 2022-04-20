@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    /* the flex lets media for fullscreen divide in half */
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    margin-top:2% ;    
+}
+
+.hero {
+    background: url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat top center ;
+    margin-top: 20px;
+    background-size: cover;
+    height: 20rem;
+    background-position: 100%;
+
+}
+
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.content{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.text{
+    text-align: center;
+
+}
+
+h2 {
+    font-family: 'AdiHaus';
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 20px;
+}
+h2.red {
+    
+    font-weight: 400;
+
+    line-height: 42px;
+    /* identical to box height, or 88% */
+
+    color: #CD3A24;
+}
+
+h2.title2 {
+    font-weight: 700;
+    line-height: 50px;
+    /* or 104% */
+    color: #423A3A;
+}
+
+.par{
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'AdiHaus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 35px 0;
+    width: 70%;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 50%;
+    height: 40px;
+    box-sizing: border-box;
+
+    font-family: 'AdiHaus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #828282;
+    padding:0 15px ;
+    }
+
+input[type="submit"] {
+    width: 20%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.split {
+    display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* media breakpoints need to be at the bottom of css */
+@media only screen and (min-width: 768px) {
+
+    body {
+    background: url('https://assets.codepen.io/6060109/destop-bg.png');
+    background-size: cover;
+    }
+
+
+    .main {
+        width: 50%;
+        
+    }
+
+    .brand {
+        display: flex;
+        justify-content: left;
+        margin: 60px;
+        margin-left: 100px; 
+    }
+
+    .hero {
+        /* this limits image size to be under 768 and if it is above it will hide img */
+        display: none; 
+    }
+
+    h2 {
+        text-align: left;
+        margin-left: 70px;
+        font-size: 64px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .par{
+        display: flex;
+        justify-content: left;
+    }
+    
+    p {
+        margin: 35px ;
+        margin-left:70px ;
+    
+    }
+
+    .text{
+        text-align: left;
+    }
+    
+    form {
+        justify-content: left;
+        margin-left: 70px;
+    }
+
+/* this is for the background images */
+
+    .split{
+        display: block;
+        
+        width: 50%;
+        background: url('https://assets.codepen.io/6060109/athlete-big.png');
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%);
+        background-size: cover;
+    }
+
+
+}
+
+        
